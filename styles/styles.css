@@ -1,0 +1,87 @@
+/* General style */
+body {
+    font-family: 'JetBrains Mono, Arial, sans-serif';
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    color:  #333;
+}
+
+header {
+    background-color: #00796b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* container for the weather description */
+#description {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+    color: #00796b;
+}
+
+/* city Select dropdown */
+#citySelect {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #00796b;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Container for weatherForecast cards */
+#forecastContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* styles for each weather card */
+.card {
+    background-color: #ffffff;
+    /* border: 1px solid #00796b; */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* ensure each card fits per row */
+    /* box-sizing: border-box; */
+    min-width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 0; /* remove default margin */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: 40px; */
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
