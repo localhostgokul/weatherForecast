@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function fetchWeatherData(latitude, longitude) {
     // Refer to www.7timer.com for documentation
-    const apiUrl = `http://www.7timer.info/bin/api.pl?lon=${latitude}&lat=${longitude}&product=astro&output=xml`
+    const apiUrl = `https://www.7timer.info/bin/api.pl?lon=${latitude}&lat=${longitude}&product=astro&output=xml`
     
     fetch(apiUrl)
         .then(response => response.text())
